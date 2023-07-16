@@ -11,7 +11,7 @@ import { getFilter, setFilter } from 'redux/filterSlice';
 import { getContacts } from 'redux/contactsSlice';
 import { useEffect, useRef } from 'react';
 import { addContact, fetchContacts } from 'contacts/thunk';
-import { Loader } from 'Loader/Loader';
+import { Loader } from 'components/Loader/Loader';
 
 export const App = () => {
   const { items, isLoading, error } = useSelector(getContacts);
